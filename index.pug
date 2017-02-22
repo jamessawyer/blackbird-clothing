@@ -2,26 +2,126 @@ doctype html
 html(lang="en")
   head
     meta(charset="utf-8")
-    title Parallax effect -- fixed background, moving elements
+    title black-bird 服饰
     meta(name="description", content="")
     meta(name="viewport", content="width=device-width, initial-scale=1")
-    link(rel="stylesheet", href="./css/layout1.css")
+    link(rel="stylesheet", href="./css/style.css")
 
   body
     
     header.bird-box
       .back-bird
       .logo
-      .fore-bird    
+      .fore-bird
       
     
     section.content
       article
-        h1 Closing Store
+        h1 最新潮品
         hr
 
         p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         
+        hr
+        
+        .clothes-pics
+          
+          .row.img-row
+            figure.columns
+              img(src="./images/model1.jpg" width="200" height="250")
+              figcaption 纤薄外套 - <strong>￥135</strong>
+            figure.columns    
+              img(src="./images/model2.jpg" width="200" height="250")
+              figcaption 休闲西装 - <strong>￥535</strong>
+            figure.columns      
+              img(src="./images/model3.jpg" width="200" height="250")
+              figcaption 时尚夹克 - <strong>￥635</strong>
+                
+          .row.img-row
+            figure.columns    
+              img(src="./images/model4.jpg" width="200" height="250")
+              figcaption 格子西装 - <strong>￥899</strong>
+            figure.columns      
+              img(src="./images/model5.jpg" width="200" height="250")
+              figcaption 连帽派克外套 - <strong>￥599</strong>  
+            figure.columns
+              img(src="./images/model6.jpg" width="200" height="250")
+              figcaption 飞行夹克 - <strong>￥768</strong>
+                            
+          .row.img-row
+            figure.columns      
+              img(src="./images/model7.jpg" width="200" height="250")
+              figcaption 麂皮绒外套 - <strong>￥459</strong>
+            figure.columns
+              img(src="./images/model1.jpg" width="200" height="250")
+              figcaption 民族风夹克 - <strong>￥399</strong>
+            figure.columns    
+              img(src="./images/model9.jpg" width="200" height="250")
+              figcaption 军绿休闲外套 - <strong>￥880</strong>
+        
+        h1 春季新款
+        
+        hr
+        
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        
+        hr
+        
+        .large-window
+          .window-modal
+            .promote-text 时尚夹克
+              strong ￥498<span>起</span>
+              a(href="").window-buy 立即购买
+        
+        
+        h1 City & Me
+        
+        hr
+        
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        
+        hr      
+        
+        .cards
+          .card
+            h4.card-title 潮款集合
+            img.card-img(src="../images/posts/one.jpg")
+            p.card-description Excepteur sint occaecat velit esse cillum 
+            a.card-button 了解更多
+          
+          .card
+            h4.card-title 时尚主义
+            img.card-img(src="../images/posts/two.jpg")
+            p.card-description Ut enim ad minim veniam, quis 
+            a.card-button 了解更多
+          
+          .card
+            h4.card-title 最流行
+            img.card-img(src="../images/posts/three.jpg")
+            p.card-description sunt in culpa qui officia deserunt 
+            a.card-button 了解更多
     
+    footer
+      .footer-container
+        dl
+          dt 联系我们
+          dd
+            a(href="") 新浪微博
+            a(href="") 微信公众号
+            a(href="") 腾讯微博
+            a(href="") 邮箱
+        dl    
+          dt 相关店铺
+          dd
+            a(href="") 天猫旗舰店
+            a(href="") 京东官方店
+            a(href="") 一淘店
+        dl    
+          dt 订阅我们的邮箱，获取最新潮资讯
+          dd.footer-form
+            form
+              input(type="email", placeholder="您的邮箱")
+              button(type="submit").footer-button 提交
+            
     script(src="./js/jquery-2.2.4.js")
     script(src="./js/scroll.js")
